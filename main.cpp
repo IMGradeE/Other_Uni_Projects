@@ -93,9 +93,8 @@ public:
             cin >> to_x;
             --to_x;
             --to_y;
-            if ((to_y <= 7 && to_y >= 0) && (to_x <= 7 && (to_x >= 0))) { //TODO What the fuck?
+            if ((to_y <= 7 && to_y >= 0) && (to_x <= 7 && (to_x >= 0))) { //Never made this legible, sorry.
                 if(((to_x == start_x + 1)||(to_x == start_x)||(to_x == start_x - 1)) && ((to_y == start_y + 1)||(to_y == start_y)||(to_y == start_y - 1))){
-                    /*¯\_(ツ)_/¯ ¯\_(ツ)_/¯¯\_(ツ)_/¯*/ // TODO seriously, WHAT?
                     tiles[start_y][start_x] -= 1;
                     tiles[to_y][to_x] += 1;
                     start_y = to_y;
@@ -123,7 +122,7 @@ public:
     Queen(){
         DisplayChar = "Qn";
     }
-    void move() {
+    void move() { // Delicious undergraduate spaghetti. 12-16-23
         int to_x;
         int to_y;
 
@@ -153,7 +152,7 @@ public:
                     if (tiles[to_y][to_x] == 3)
                         wincond = true;
                     break;
-                }else if(/* OR (this is stupid but my brain is mush right now ¯\_(ツ)_/¯*/((start_y != to_x) && (start_y != to_y)) && (to_x != start_x)){
+                }else if(((start_y != to_x) && (start_y != to_y)) && (to_x != start_x)){
                     tiles[start_y][start_x] -= 1;
                     tiles[to_y][to_x] += 1;
                     start_y = to_y;
