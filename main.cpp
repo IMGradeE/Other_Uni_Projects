@@ -299,7 +299,6 @@ string Base_chess::whitespace(int n) {
 int main() {
     int choice = 0;
     Base_chess* piece = new Base_chess;
-    //TODO Remember you have (multiple) backups of this file
     cout << piece->getDisplay("na");
     cout << "Choose a piece from the following options:\n"<< "1: Pawn\n2: Rook\n3: King\n4: Queen\n5: Bishop\n6: Quit";
     cin >> choice;
